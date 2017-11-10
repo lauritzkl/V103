@@ -1,1 +1,4 @@
-In
+Gestalt- und Volumenveränderungen treten dann auf, wenn Kräfte an der Oberfläche eines Körpers angreifen.
+Die Kräfte auf eine Flächeeinheit erhalten die physikalische Größe als Spannung. Die Senkrechtekomponente zur Oberfläche heißt Normalspannung \sigma oder Druck. Die parallele Komponente heißt Tangential oder Schubspannung. Das Hookesche Gesetz bezeichnet einen linearen Zusammenhang zwischen Deformation von der relativen Änderung und der Spannung \sigma. S. Abb1
+Der Proportionalitätsfaktor E wird als Elastizitätsmodul bezeichnet. In der Technik ist die Materialkonstante eine wichtige Eigenschaft des Werkstoffes dar.
+Durch kleine Längenänderung, wie in Abb.1, kann das Elastizitätsmodul aus Dehnung oder Stauchung eines Körpers auch bestimmt werden.
