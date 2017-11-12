@@ -1,0 +1,6 @@
+\section{Durchführung}
+Da in beiden Messmethoden der Probestab nicht parallel zur Probeachse bzw. Länge-Skala liegt wird eine Messdurchführung ohne Last durchgeführt.
+Dabei geht man entlang des Stabes an den verschiedene X Stellen mit der Messuhr ab und zeichnet dort die jeweiligen Werte auf.
+Dies wird dann als $D_\text{0}(x)$ aufgezeichnet.
+Anschließend wird die Messdurchführung nochmal durchgeführt mit Last und als $D_\text{m}(x)$ aufgezeichnet.
+Für die tatsächliche Durchbiegung ist $D(x)= D_\text{m}(x) - D_\text{0}(x)$.
