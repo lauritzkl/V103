@@ -47,4 +47,4 @@ Durch Integration erhält die Durchbiegung D(x) folgende Darstellung:
 \begin{equation}
 D(x) = \frac {F}{2EI} (L\cdot x^2- \frac {x^3}{3}) \quad \text{für}  \quad 0 \leq x \leq L
 \end{equation}
-die Integrationskonstante fällt weg da an D(0)=0 ist.
+die Integrationskonstante fällt weg, da an D(0)=0 ist.
