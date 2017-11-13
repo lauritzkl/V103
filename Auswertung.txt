@@ -1,3 +1,4 @@
+\section{Auswertung}
 \subsection{Quadratischer Stab bei einseitiger Aufhängung}
 
 Vor der Bestimmung des Elastizitätsmoduls muss zunächst das Material des Stabes bestimmt werden.
@@ -11,8 +12,8 @@ Die geometrischen Abmessungen des quadratischen Stabes sind:
 
 \begin{enumerate}
   \item Länge: l=$55 \si{centimetre} = 0.55 \si{metre}$
-  \item Masse: m=$121.3e-3 \si{kilogramm}
-  \item Breite:
+  \item Masse: m=$121.3e-3 \si{kilogramm}$
+  %\item Breite:
     \begin{enumerate}
       \item Messwerte: $10.4 \si{millimetre}, 10.1 \si{millimetre},
       10.2\si{millimetre}, 10.1\si{millimetre}, 10.1\si{millimetre},
@@ -36,4 +37,3 @@ Daraufhin wird die Standartabweichung von dem Mittelwert ermittelt:
 
 Nun ergibt sich für den quadratischen Stab die Dichte:\\
 $\rho = 7701.04 \pm 45.57 \si[per-mode=fraction]{kilogramm\per\metre\squared}$\\
- 
