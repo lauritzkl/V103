@@ -8,7 +8,7 @@ mpl.rcParams.update({
 'text.usetex': True,
 'pgf.rcfonts': False,
 'pgf.texsystem': 'lualatex',
-'pgf.preamble': r'\input{header-matplotlib.tex}',
+'pgf.preamble': r'\usepackage{unicode-math}\usepackage{siunitx}',
 })
 
 
@@ -23,12 +23,12 @@ errors = np.sqrt(np.diag(covariance_matrix))
 
 x_plot = np.linspace(0, 0.1)
 
-plt.plot(x, y, 'kx', label='Daten')
+plt.plot(x, y, r'kx', label=r'Daten')
 plt.plot(x_plot, f(x_plot, *params), 'r-', label='Linearer Fit')
 plt.legend()
 plt.grid()
-plt.ylabel('$D(x)/ \si{metre}$')
-plt.xlabel('$Lx^2 - \frac{x^3}{3}$')
+plt.ylabel(r'$D(x)/ m$')
+plt.xlabel(r'$Lx^2 - x^3/3$')
 #plt.show()
 plt.savefig('ausgleichsgerade1.pdf')
 print('a=', params[0], '+-', errors[0])
