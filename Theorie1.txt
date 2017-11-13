@@ -13,20 +13,20 @@
 \end{subfigure}
 \caption{Schematische Darstellung bei einseiter Einspannung, Abbildung(b): Schematische Darstellung des Drehmoments $M_\text{$\sigma$}$}
 \end{figure}
-Eine Kraft wirkt auf ein Körper und wird dabei gebogen, sowie in Abb.2 dargestellt ist, dabei ist D(x) die Durchbiegung eines Oberflächenpunktes, die verschoben ist, um die Stelle x zwischen belastetem und unbelastetem Zustand.
+Eine Kraft wirkt auf ein Körper und wird dabei gebogen, sowie in Abb.2 (a) dargestellt ist, dabei ist D(x) die Durchbiegung eines Oberflächenpunktes, die verschoben ist, um die Stelle x zwischen belastetem und unbelastetem Zustand.
 In der Abb.2 (a) kann eine Drehmomentgleichung aufstellen werden, um die Funktion D(x) zu bestimmen.\\
 
 Eine Kraft übt senkrecht zur Stabachse zur stehenden Querschnittfläche Q ein Drehmoment $M_\text{f}$ von seiner Ruhelage in vertikaler Richtung aus.
 Ebenso durch die Einspannung des Körpers ist seine obere Schicht gedehnt und die untere Schicht gestaucht. Die Fläche zwischen den beiden Schichten bezeichnet man als neutrale Faser (s. Abb.3(b)).
-Zwischen der Zugspannung, was die obere Schicht ist, und der Druckspannung, was die untere Schicht ist, bewirken ein Drehmoment $M_\text{\sigma}$.
+Zwischen der Zugspannung, was die obere Schicht ist, und der Druckspannung, was die untere Schicht ist, bewirken ein Drehmoment $M_\text{$\sigma$}$.
 Da nun die beiden Drehmomente übereinstimmen müssen, sind die gleich:
 \begin{equation}
  M_\text{f} = M_\text{$\sigma$}
 \end{equation}
-Mit $M_\text{f} = F\cdot(L-x)$ und $M_\text{\sigma} = \int_Q y \sigma(y) dq$ \\
+Mit $M_\text{f} = F\cdot(L-x)$ und $M_\text{$\sigma$} = \int_Q y \sigma(y) dq$ \\
 Die Normalspannung lässt sich mithilfe Hookeschen Gesetz berechnen.
 \begin{equation}
-\sigma(y) = E \frac {\partial x}{ \delta x}
+\sigma(y) = E \frac {\partial x}{\Delta x}
 \end{equation}
 \begin{figure}
 \centering

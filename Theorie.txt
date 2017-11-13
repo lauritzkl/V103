@@ -3,8 +3,7 @@ Gestalt- und Volumenveränderungen treten dann auf, wenn Kräfte an der Oberflä
 Die Kräfte auf eine Flächeeinheit bezeichnet die Physik als Spannung.
 Die Senkrechtekomponente zur Oberfläche heißt Normalspannung $\sigma$ oder Druck.
 Die parallele Komponente zur Oberfläche heißt Tangential oder Schubspannung.
-Das Hookesche Gesetz bezeichnet einen linearen Zusammenhang zwischen Deformation von der relativen Änderung und der Spannung $\sigma$.
-siehe Abbildung 1
+Das Hookesche Gesetz bezeichnet einen linearen Zusammenhang zwischen Deformation von der relativen Änderung $\frac{\delta L}{L}$ und der Spannung $\sigma$ (s. Abbildung 1) \\
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Bild1.jpg}

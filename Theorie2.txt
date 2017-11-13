@@ -1,5 +1,5 @@
 %\input{header.tex}
-\subsection{Biegung bei einer beiseitigen Einspannung}
+\subsection{Biegung bei einer beidseitige Einspannung}
 Ein Stab an denen beiden Enden festgehalten wird und eine Kraft in der Stabmitte angreift, wie in Abb 5. zu sehen ist, lässt sich ebenfalls das Elastizitätsmodul errechnet.
 \begin{figure}
 \centering
