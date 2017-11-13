@@ -11,15 +11,15 @@ Das geschieht über die Dichte des Stabes, welche mit folgender Formel bestimmt 
 Die geometrischen Abmessungen des quadratischen Stabes sind:
 
 \begin{enumerate}
-  \item Länge: l=$55 \si{centimetre} = 0.55 \si{metre}$
-  \item Masse: m=$121.3e-3 \si{kilogramm}$
-  %\item Breite:
+  \item Länge: L=\SI{55}{\centi\meter} = \SI{0.55}{\meter}
+  \item Masse: m=\SI{121.3e-3}{\kilo\gram}
+  \item Breite:
     \begin{enumerate}
-      \item Messwerte: $10.4 \si{millimetre}, 10.1 \si{millimetre},
-      10.2\si{millimetre}, 10.1\si{millimetre}, 10.1\si{millimetre},
-      10.1\si{millimetre}, 10.1\si{millimetre},
-      10.1\si{millimetre}, 10.1\si{millimetre}, 10.1 \si{millimetre}$
-      \item Mittelwert: b = $(10.14 \pm 0.03)e-3 \si{metre}$
+      \item Messwerte: \SI{10.4}{\milli\meter}, \SI{10.1}{\milli\meter},
+      \SI{10.2}{\milli\meter}, \SI{10.1}{\milli\meter}, \SI{10.1}{\milli\meter},
+      \SI{10.1}{\milli\meter}, \SI{10.1}{\milli\meter},
+      \SI{10.1}{\milli\meter}, \SI{10.1}{\milli\meter}, \SI{10.1}{\milli\meter}
+      \item Mittelwert: b = \SI{10.14(3)e-3}{\meter}
     \end{enumerate}
 \end{enumerate}
 
@@ -36,4 +36,41 @@ Daraufhin wird die Standartabweichung von dem Mittelwert ermittelt:
 \end{equation}
 
 Nun ergibt sich für den quadratischen Stab die Dichte:\\
-$\rho = 7701.04 \pm 45.57 \si[per-mode=fraction]{kilogramm\per\metre\squared}$\\
+\centerline{$\rho = 7701,04 \pm 45,57 \si[per-mode=fraction]{\kilo\gram\per\metre\squared}$}
+
+Der Fehler der Dichte lässt sich mithilfe der Gauß´schen Fehlerfortpflanzung berechnen:
+
+\begin{equation}
+  \Delta \rho = \sqrt{\left(\frac{\partial\rho}{\partial b} \cdot \Delta b \right)^2}
+\end{equation}
+
+Wenn dieser Wert mit Literaturwerten verglichen wird folgt, dass die Dichte von Eisenstahl
+am ähnlichsten ist.\\
+\centerline{$\rho_ES = 7700 \si[per-mode=fraction]{\kilo\gram\per\metre\squared}$}
+
+\begin{table}
+  \centering
+  \caption{Tabelle mit Messdaten und Daten für die Ausgleichsrechnung}
+  \begin{tabular}{c c c}
+    \toprule
+    x in \si{\meter} & D(x) in $10^{-3}\si{\meter}$ & $\left(Lx^2-\frac{x^3}{3}\right) \text{in} \, 10^{-3}\si{\meter}$ \\
+    \midrule
+    0.03 & 0.03 &  0.486 \\
+    0.05 & 0.04 &  1.33 \\
+    0.10 & 0.24 &  5.17 \\
+    0.15 & 0.47 &  11.25 \\
+    0.20 & 0.75 &  19.33 \\
+    0.25 & 1.07 &  29.17 \\
+    0.30 & 1.4 &  40.5 \\
+    0.35 & 1.88 &  53.08 \\
+    0.40 & 2.22 &  66.66 \\
+    0.45 & 2.78 &  81 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+Mithilfe der Messwerte, die in Tabelle 1 dargestellt sind, lässt sich nun eine
+Ausgleichsrechnung durchführen um das Elastizitätsmodul zu bestimmen. Die Ausgleichsgerade
+wird mithilfe von Python 3.6 bestimmt.
