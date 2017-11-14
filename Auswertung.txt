@@ -99,7 +99,7 @@ Der Fehler wird wieder mit der Gauß´schen Fehlerfortpflanzung bestimmt, wie be
 
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade1.pdf}
   \caption{Messwerte des quadratuschen Stabes mit linearer Regression}
