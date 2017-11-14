@@ -99,7 +99,7 @@ Der Fehler wird wieder mit der Gauß´schen Fehlerfortpflanzung bestimmt, wie be
 
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade1.pdf}
   \caption{Messwerte des quadratuschen Stabes mit linearer Regression}
@@ -181,7 +181,7 @@ In der Tabelle 2 sind die Messwerte für den runden Stab dargestellt. Nun wird w
 die Durchbiegung D(x) und die Werte zum Term $\left(Lx^2-\frac{x^3}{3}\right)$ in
 einem Plot dargestellt und es wird eine Ausgleichsrechnung durchgeführt.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade2.pdf}
   \caption{Messwerte des runden Stabes mit linearer Regression}
@@ -240,7 +240,7 @@ Zunächst wird das Elastizitätsmodul für $0$ bis $\frac{L}{2}$ bestimmt.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.pdf}
   \caption{Messwerte des quadratischen Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
@@ -286,7 +286,7 @@ identisch nur, dass die Gleichung (13) anstatt (12) verwendet wird.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.1.pdf}
   \caption{Messwerte des quadratischen Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
@@ -334,7 +334,7 @@ durchgeführt.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.pdf}
   \caption{Messwerte des runden Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
@@ -374,7 +374,7 @@ Messungen ist wieder gleich mit dem für den quadratischen Stab.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.1.pdf}
   \caption{Messwerte des runden Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
