@@ -375,30 +375,26 @@ Messungen ist wieder gleich mit dem für den quadratischen Stab.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.1.pdf}
   \caption{Messwerte des runden Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
 \end{figure}
 
-Aus den Messdaten ergeben sich nun folgende Parameter für die Ausgleichsgerade, die mit
-Python 3.6 bestimmt wurde:
+Mithilfe der Messwerte, die in Tabelle 1 dargestellt sind, lässt sich nun eine
+Ausgleichsrechnung durchführen um das Elastizitätsmodul zu bestimmen. Die Ausgleichsgerade
+wird mithilfe von Python 3.6 bestimmt.
 
 \begin{itemize}
   \item $m = \SI{11.599(337)e-3}{\meter\tothe{-2}}$
   \item $b = \SI{89.8(41)e-5}{\meter}$
 \end{itemize}
 
+
 Damit lässt sich nun das Elastizitätsmodul des runden Stabes noch einmal bestimmen,
 mithilfe der Überlegungen für den quadratischen Stab:
 
 \centerline{$E= \num{84.8(25)e9} \frac{N}{m^2}$}
-||||||| merged common ancestors
-Mithilfe der Messwerte, die in Tabelle 1 dargestellt sind, lässt sich nun eine
-Ausgleichsrechnung durchführen um das Elastizitätsmodul zu bestimmen. Die Ausgleichsgerade
-wird mithilfe von Python 3.6 bestimmt.
-=======
-\begin{figure}
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade1.pdf}
   \caption{Messwerte des quadratuschen Stabes mit linearer Regression}
@@ -480,7 +476,7 @@ In der Tabelle 2 sind die Messwerte für den runden Stab dargestellt. Nun wird w
 die Durchbiegung D(x) und die Werte zum Term $\left(Lx^2-\frac{x^3}{3}\right)$ in
 einem Plot dargestellt und es wird eine Ausgleichsrechnung durchgeführt.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade2.pdf}
   \caption{Messwerte des runden Stabes mit linearer Regression}
@@ -539,7 +535,7 @@ Zunächst wird das Elastizitätsmodul für $0$ bis $\frac{L}{2}$ bestimmt.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.pdf}
   \caption{Messwerte des quadratischen Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
@@ -585,7 +581,7 @@ identisch nur, dass die Gleichung (13) anstatt (12) verwendet wird.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.1.pdf}
   \caption{Messwerte des quadratischen Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
@@ -633,7 +629,7 @@ durchgeführt.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.pdf}
   \caption{Messwerte des runden Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
@@ -673,7 +669,7 @@ Messungen ist wieder gleich mit dem für den quadratischen Stab.
   \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.1.pdf}
   \caption{Messwerte des runden Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}

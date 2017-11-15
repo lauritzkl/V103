@@ -8,7 +8,7 @@ des Elastizitätsmoduls von Eisenstahl beträgt $E = ... \frac{N}{m^2}$. Damit w
 gemessene Wert um ...% von dem Literaturwert ab.
 
 Bei dem Runden Stab wurde Aluminium als Material bestimmt. Der Literaturwert ist in diesem
-Fall $E = 70e9 \frac{N}{m^2}$. Die Abweichung der gemessenen Werte liegt also zwischen
+Fall $E = \num{70e9} \frac{N}{m^2}$. Die Abweichung der gemessenen Werte liegt also zwischen
 \SI{21.1}{\percent} und \SI{28.6}{\percent}.
 
 Es wird direkt klar, dass es eine Abweichung zu den Literaturwerten geben muss, da
