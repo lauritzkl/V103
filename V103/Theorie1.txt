@@ -1,0 +1,50 @@
+\subsection{Biegung bei einseitiger Einspannung}
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[height=60mm]{Bild2.jpg}
+\caption{Darstellung 1}
+\label{fig:Abb2}
+\end{subfigure}
+\begin{subfigure}[b]{0.48\textwidth}
+\includegraphics[height=40mm]{Bild3.jpg}
+\label{fig:Abb}
+\caption{Darstellung 2}
+\end{subfigure}
+\caption{Schematische Darstellung bei einseiter Einspannung, Abbildung(b): Schematische Darstellung des Drehmoments $M_\text{$\sigma$}$}
+\end{figure}
+Eine Kraft wirkt auf ein Körper und wird dabei gebogen, sowie in Abb.2 (a) dargestellt ist, dabei ist D(x) die Durchbiegung eines Oberflächenpunktes, die verschoben ist, um die Stelle x zwischen belastetem und unbelastetem Zustand.
+In der Abb.2 (a) kann eine Drehmomentgleichung aufstellen werden, um die Funktion D(x) zu bestimmen.\\
+
+Eine Kraft übt senkrecht zur Stabachse zur stehenden Querschnittfläche Q ein Drehmoment $M_\text{f}$ von seiner Ruhelage in vertikaler Richtung aus.
+Ebenso durch die Einspannung des Körpers ist seine obere Schicht gedehnt und die untere Schicht gestaucht. Die Fläche zwischen den beiden Schichten bezeichnet wird als neutrale Faser genannt (s. Abb.3(b)).
+Zwischen der Zugspannung, was die obere Schicht ist, und der Druckspannung, was die untere Schicht ist, bewirken ein Drehmoment $M_\text{$\sigma$}$.
+Da nun die beiden Drehmomente übereinstimmen müssen, sind die gleich:
+\begin{equation}
+ M_\text{f} = M_\text{$\sigma$}
+\end{equation}
+Mit $M_\text{f} = F\cdot(L-x)$ und $M_\text{$\sigma$} = \int_Q y \sigma(y) dq$ \\
+Die Normalspannung lässt sich mithilfe Hookeschen Gesetz berechnen.
+\begin{equation}
+\sigma(y) = E \frac {\partial x}{\Delta x}
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=5cm , height= 5 cm]{Bild4.jpg}
+\caption{Skizze zur Berechnung der Normalspannung}
+\label{fig:Abb3}
+\end{figure}
+In Abb 3. lässt sich eine weitere Beziehung zur Bestimmung der Normalspannung herleiten.
+\begin{equation}
+\sigma(y) = E \cdot y \cdot \frac {\text{d}^2 D}{\text{d} x^2}
+\end{equation}
+Eingesetzt in die Gleichung (1) folgt folgender Ausdruck
+\begin{equation}
+E \cdot \frac {\text{d}^2 D}{\text{d} x^2} \cdot \int_Q y^2 dq = F \cdot (L-x)
+\end{equation}
+Dabei ist $I =\int_Q y^2 dq$ das Flächenträgheitsmoment.\\
+Durch Integration erhält die Durchbiegung D(x) folgende Darstellung:
+\begin{equation}
+D(x) = \frac {F}{2EI} (L\cdot x^2- \frac {x^3}{3}) \quad \text{für}  \quad 0 \leq x \leq L
+\end{equation}
+die Integrationskonstante fällt weg, da an D(0)=0 ist.
