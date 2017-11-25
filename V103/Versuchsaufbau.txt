@@ -1,15 +1,16 @@
 \section{Versuchsaufbau}
-In Abb. 5. ist die schematische Darstellung zum Theorieteil 1.
+In \ref{fig:Abb5} ist die schematische Darstellung zum Theorieteil 1.
 \begin{figure}
 \centering
 \includegraphics[width=10 cm, height=5cm]{Bild6.jpg}
 \label{fig:Abb6}
-\caption{Darstellung der Messaperatur}
+\caption{Darstellung der Messaperatur [1].}
 \end{figure}
+
 Dabei wird der Stab an Punkt A fixiert und mithilfe einer Spannvorrichtung C eingespannt.
 Ein weiterer Bestandteil der Messung für die Durchbiegung, sind 2 Messuhren.
 Sie messen den Abstand der Durchbiegung an der Stelle X.
 Eine weitere Länge-Skala misst den Abstand vom Nullpunkt zur verschiedenen X Stellen.
-Wie in der Abbildung 5 hängt die Kraft am Ende des Körpers.
+Wie in der \ref{fig:Abb5} hängt die Kraft am Ende des Körpers.
 Für den zweiten Theorieteil wird der Stab noch zusätzlich am Punkt B fixiert.
 Dann wird die Kraft in der Mitte des Stabes befestigt.

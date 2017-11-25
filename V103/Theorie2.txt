@@ -1,32 +1,34 @@
 %\input{header.tex}
 \subsection{Biegung bei einer beidseitige Einspannung}
-Ein Stab an denen beiden Enden festgehalten wird und eine Kraft in der Stabmitte angreift, wie in Abb 5. zu sehen ist, lässt sich ebenfalls das Elastizitätsmodul errechnet.
+Ein Stab an denen beiden Enden festgehalten wird und eine Kraft in der Stabmitte angreift, wie in Abbildung \ref{fig:Abb5} zu sehen ist, lässt sich ebenfalls das Elastizitätsmodul errechnet.
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Bild5.jpg}
-\caption{Durchbiegung bei zweiseitiger Auflage}
+\caption{Durchbiegung bei zweiseitiger Auflage [1].}
 \label{fig:Abb5}
 \end{figure}
 Die Kraft F/2 greift mit dem Hebelarm x an der Querschnittsfläche Q an.
-Daher gilt für diesen Bereich für das Drehmoment $M_\text{f}$ von $0\leq x \leq L/2$ für die andere Hälfte $L/2 \leq x \leq L$
-\begin{equation}
-\frac {d^2 D} {dx^2} = - \frac{F \cdot x} {E \cdot I \cdot 2}
-\end{equation}
-\begin{equation}
-\frac {d^2 D} {dx^2} = - \frac{F} {2 \cdot E \cdot I} \cdot \text{(L-x)}
-\end{equation}
-Aus Gleichung (4) und durch die Integration folgt nun die Gleichungen:
-\begin{equation}
-\frac{dD}{dx} = - \frac{Fx^2}{4 E \cdot I} + C \quad \text{für 0<\text{x}<L/2}
-\end{equation}
+Daher gilt für diesen Bereich für das Drehmoment $M_\text{f}$ von $0\leq x \leq L/2$ für die andere Hälfte $L/2 \leq x \leq L$\\\\
+
+$\frac {d^2 D} {dx^2} = - \frac{F \cdot x} {E \cdot I \cdot 2}$\\\\
+
+
+$\frac {d^2 D} {dx^2} = - \frac{F} {2 \cdot E \cdot I} \cdot \text{(L-x)}$\\\\
+
+Aus der oben genannten Gleichung und durch die Integration folgt nun die Gleichungen:\\\\
+
+$\frac{dD}{dx} = - \frac{Fx^2}{4 E \cdot I} + C \quad \text{für 0<\text{x}<L/2}$\\\\
+
 \begin{equation}
 \frac{dD}{dx} = -\frac{F}{2 E \cdot I} \cdot (Lx-\frac{x^2}{2}) + C' \quad \text{für L/2<\text{x}<L}
 \end{equation}
+
 Mit den Integrationskostanten:
-\begin{align}
-C = \frac{F \cdot L^2 }{16 E \cdot I}\\
-C'= \frac{3\cdot F \cdot L^2}{16 E \cdot I}
-\end{align}
+
+$C = \frac{F \cdot L^2 }{16 E \cdot I}$ \\\\
+$C'= \frac{3\cdot F \cdot L^2}{16 E \cdot I}$\\\\
+
+
 Eine weitere Integration zeigt, dass die Integrationskonstante für das linke Auflager null ist und für die rechte Seite D(L) = 0 ist.
 Damit hat die Gleichung von $0\leq x \leq L/2$ folgenden Ausdruck:
 \begin{equation}

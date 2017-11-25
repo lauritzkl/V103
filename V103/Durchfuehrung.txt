@@ -3,4 +3,4 @@ Da in beiden Messmethoden der Probestab nicht parallel zur Probeachse bzw. Läng
 Dabei wird entlang des Stabes an den verschiedenen X Stellen mithilfe der Messuhren die jeweiligen Werte dort aufgezeichnet.
 Dies wird als $D_\text{0}(x)$ bezeichnet.
 Anschließend wird die Messdurchführung nochmal durchgeführt mit einer Last und als $D_\text{m}(x)$ bezeichnet.
-Für die tatsächliche Durchbiegung folgt: $D(x)= D_\text{m}(x) - D_\text{0}(x)$.
+Für die tatsächliche Durchbiegung folgt: $D(x)= D_\text{0}(x) - D_\text{m}(x)$.

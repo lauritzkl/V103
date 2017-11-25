@@ -72,16 +72,18 @@ Durch Vergleichen von den Gleichungen (5) und (18) folgt für das Elastizitätsm
 
 Das Flächenträgheitsmoment $I$ lässt sich mit der oben genannten Formel bestimmen:\\
 
-\centerline{$I_{quadrat} = \frac{b^4}{12} = \SI{8.81(10)e-10}{\meter\tothe{4}}$}
+\centerline{$I_{quadrat} = \frac{b^4}{12} = \SI{8.81(10)e-10}{\meter\tothe{4}}$}\ \\
 
-Der Fehler wird wieder mit der Gauß´schen Fehlerfortpflanzung bestimmt, wie bei Gleichung (17).\\
+Der Fehler wird wieder mit der Gauß´schen Fehlerfortpflanzung bestimmt, wie folgt bestimmt:\\\\
+
+$\Delta I_{quadrat} = \sqrt{\left( \frac{b^3}{3} \cdot \Delta b\right)^2}$\\\\
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten für die Ausgleichsrechnung}
+  \caption{Tabelle mit Messdaten und Daten für die Ausgleichsrechnung.}
   \begin{tabular}{c c c}
     \toprule
-    x in \si{\meter} & D(x) in $10^{-3}\si{\meter}$ & $\left(Lx^2-\frac{x^3}{3}\right) \text{in} \, 10^{-3}\si{\meter}$ \\
+    x in \si{\meter} & D(x) in $10^{-3}\si{\meter}$ & $\left(Lx^2-\frac{x^3}{3}\right) \text{in} \, 10^{-3}\si{\meter\tothe{3}}$ \\
     \midrule
     0.03 & 0.03 &  0.486 \\
     0.05 & 0.04 &  1.33 \\
@@ -100,7 +102,7 @@ Der Fehler wird wieder mit der Gauß´schen Fehlerfortpflanzung bestimmt, wie be
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade1.pdf}
-  \caption{Messwerte des quadratischen Stabes mit linearer Regression}
+  \caption{Messwerte des quadratischen Stabes mit linearer Regression.}
 \end{figure}
 
 Die Kraft F ist die Gewichtskraft des verwendeten Gewichtes. In diesen Fall ist das Gewicht
@@ -156,10 +158,10 @@ von Aluminium am ähnlichsten ist:\\
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten für die Ausgleichsrechnung}
+  \caption{Tabelle mit Messdaten und Daten für die Ausgleichsrechnung.}
   \begin{tabular}{c c c}
   \toprule
-  $x$ in \si{\meter} & $D(x) \text{in} \, 10^{-3}\si{\meter}$ & $\left(Lx^2-\frac{x^3}{3}\right) \text{in} \, 10^{-3}\si{\meter}$ \\
+  $x$ in \si{\meter} & $D(x) \text{in} \, 10^{-3}\si{\meter}$ & $\left(Lx^2-\frac{x^3}{3}\right) \text{in} \, 10^{-3}\si{\meter\tothe{3}}$ \\
   \midrule
   0.03 & 0.05 &   0.486 \\
   0.05 & 0.1 & 1.33 \\
@@ -182,7 +184,7 @@ einem Plot dargestellt und es wird eine Ausgleichsrechnung durchgeführt.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade2.pdf}
-  \caption{Messwerte des runden Stabes mit linearer Regression}
+  \caption{Messwerte des runden Stabes mit linearer Regression.}
 \end{figure}
 
 Die Parameter der Ausgleichsgeraden werden wieder mithilfe von Python 3.6 ermittelt:
@@ -197,7 +199,7 @@ Durch Vergleichen der Gleichungen (5) und (18) ergibt sich wieder die Gleichung 
 Die Formel für das Flächenträgheitsmoment eines runden Stabes lässt sich auch mit
 der oben genannten Gleichung ermitteln:\\
 
-\centerline{$I_{Rund} = \frac{\pi}{4} \frac{d}{2}^4 = \SI{490.87e-12}{\meter\tothe{4}}$}
+\centerline{$I_{Rund} = \frac{\pi}{4} R^4 = \SI{490.87e-12}{\meter\tothe{4}}$}\ \\
 
 Die Gewichtskraft für den runden Stab ist die gleiche wie bei dem quadratischen,
 da die Masse des Gewichtes gleich ist. F ist also $5,243N$.
@@ -222,11 +224,11 @@ Zunächst wird das Elastizitätsmodul für $0$ bis $\frac{L}{2}$ bestimmt.
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten von $0$ bis $\frac{L}{2}$}
+  \caption{Tabelle mit Messdaten und Daten von $0$ bis $\frac{L}{2}$.}
   \begin{tabular}{c c c}
     \toprule
     x in \si{\meter} & $D(x) \text{in} \, 10^{-3} \si{\meter}$ &
-    $ \left( 3L^2x-4x^3 \right) \text{in} \, 10^{-3} \si{\meter}$\\
+    $ \left( 3L^2x-4x^3 \right) \text{in} \, 10^{-3} \si{\meter\tothe{3}}$\\
     \midrule
     0    & -0.03 & 0 \\
     0.05 & 0.24 & 44.87 \\
@@ -241,7 +243,7 @@ Zunächst wird das Elastizitätsmodul für $0$ bis $\frac{L}{2}$ bestimmt.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.pdf}
-  \caption{Messwerte des quadratischen Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
+  \caption{Messwerte des quadratischen Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression.}
 \end{figure}
 
 Die Ergebnisse der Ausgleichsrechnung, die wieder mit Python 3.6 durchgeführt wurde,
@@ -260,20 +262,29 @@ Die Gewichtskraft ist diesmal jedoch anders, da die Masse $m_1 = \SI{2.362}{\kil
 beträgt. Daraus ergibt sich dann die Kraft $F = 23,171N$.
 
 Nun lässt sich das Elastizitätsmodul für den ersten Teil der Messung bestimmen,
-wobei der Fehler wieder mit der Gleichung (19) berechnet wird:
+die mit der folgenden Gleichung berechnet wird:
 
-\centerline{$E = \num{90(5)e9} \frac{N}{m^2}$}
+\begin{equation}
+  m = \frac{F}{48EI} \iff E = \frac{F}{48mI}
+\end{equation}
+
+\centerline{$E = \num{95(5)e9} \frac{N}{m^2}$}\ \\
+
+Der Fehler wird mit der Gauß´schen Fehlerfortpflanzung bestimmt:\\\\
+
+$\Delta E = \sqrt{\left(\frac{-F}{48m^2I}\cdot \Delta m \right)^2 + \left(
+\frac{-F}{48mI^2} \cdot \Delta I \right)^2}$\\\\
 
 Für den zweiten Teil der Messung von $\frac{L}{2}$ bis $L$ sind die Rechnungen
 identisch nur, dass die Gleichung (13) anstatt (12) verwendet wird.
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten von $\frac{L}{2}$ bis $L$}
+  \caption{Tabelle mit Messdaten und Daten von $\frac{L}{2}$ bis $L$.}
   \begin{tabular}{c c c}
     \toprule
     x in \si{\meter} & $D(x) \text{in} \, 10^{-3} \si{\meter}$ &
-    $ \left( 4x^3-12Lx^2+9L^2x-L^3 \right) \text{in} \, 10^{-3} \si{\meter}$\\
+    $ \left( 4x^3-12Lx^2+9L^2x-L^3 \right) \text{in} \, 10^{-3} \si{\meter\tothe{3}}$\\
     \midrule
     0.30 & 1.73 & 164.375 \\
     0.35 & 1.67 & 149.5 \\
@@ -287,7 +298,7 @@ identisch nur, dass die Gleichung (13) anstatt (12) verwendet wird.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade3.1.pdf}
-  \caption{Messwerte des quadratischen Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
+  \caption{Messwerte des quadratischen Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression.}
 \end{figure}
 
 Damit lauten die Parameter der Ausgleichsgeraden, die mit Python 3.6 bestimmt wurden:
@@ -316,11 +327,11 @@ durchgeführt.
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten von $0$ bis $\frac{L}{2}$}
+  \caption{Tabelle mit Messdaten und Daten von $0$ bis $\frac{L}{2}$.}
   \begin{tabular}{c c c}
     \toprule
     x in \si{\meter} & $D(x) \text{in} \, 10^{-3} \si{\meter}$ &
-    $ \left( 3L^2x-4x^3 \right) \text{in} \, 10^{-3} \si{\meter}$\\
+    $ \left( 3L^2x-4x^3 \right) \text{in} \, 10^{-3} \si{\meter\tothe{3}}$\\
     \midrule
     0    & 0    &  0 \\
     0.05 & 0.6 & 44.87 \\
@@ -335,7 +346,7 @@ durchgeführt.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.pdf}
-  \caption{Messwerte des runden Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression}
+  \caption{Messwerte des runden Stabes für $0$ bis $\frac{L}{2}$ mit linearer Regression.}
 \end{figure}
 
 Nun wird die Ausgleichsrechnung mithilfe von Python 3.6 durchgeführt, womit die Parameter
@@ -357,11 +368,11 @@ Messungen ist wieder gleich mit dem für den quadratischen Stab.
 
 \begin{table}
   \centering
-  \caption{Tabelle mit Messdaten und Daten von $\frac{L}{2}$ bis $L$}
+  \caption{Tabelle mit Messdaten und Daten von $\frac{L}{2}$ bis $L$.}
   \begin{tabular}{c c c}
     \toprule
     x in \si{\meter} & $D(x) \text{in} \, 10^{-3} \si{\meter}$ &
-    $ \left( 4x^3-12Lx^2+9L^2x-L^3 \right) \text{in} \, 10^{-3} \si{\meter}$\\
+    $ \left( 4x^3-12Lx^2+9L^2x-L^3 \right) \text{in} \, 10^{-3} \si{\meter\tothe{3}}$\\
     \midrule
     0.30 & 2.77 &  164.375 \\
     0.35 & 2.64 &  149.5 \\
@@ -375,7 +386,7 @@ Messungen ist wieder gleich mit dem für den quadratischen Stab.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ausgleichsgerade4.1.pdf}
-  \caption{Messwerte des runden Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression}
+  \caption{Messwerte des runden Stabes für $\frac{L}{2}$ bis $L$ mit linearer Regression.}
 \end{figure}
 
 Mithilfe der Messwerte, die in Tabelle 1 dargestellt sind, lässt sich nun eine

@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
 \contentsline {subsection}{\numberline {4.1}Quadratischer Stab bei einseitiger Aufhängung}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Runder Stab mit einseitiger Aufhängung}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Quadratischer Stab mit beidseitiger Aufhängung}{12}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Runder Stab mit beidseitiger Aufhängung}{15}{subsection.4.4}
-\contentsline {section}{\numberline {5}Diskussion}{18}{section.5}
-\contentsline {section}{\nonumberline Literatur}{18}{section*.19}
+\contentsline {subsection}{\numberline {4.3}Quadratischer Stab mit beidseitiger Aufhängung}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Runder Stab mit beidseitiger Aufhängung}{16}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{19}{section.5}
+\contentsline {section}{\nonumberline Literatur}{19}{section*.19}
