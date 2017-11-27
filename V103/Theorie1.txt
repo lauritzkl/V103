@@ -4,15 +4,15 @@
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[height=60mm]{Bild2.jpg}
-\caption{Darstellung 1}
+\caption{Darstellung 1.}
 \label{fig:Abb2a}
 \end{subfigure}
 \begin{subfigure}[b]{0.48\textwidth}
 \includegraphics[height=40mm]{Bild3.jpg}
-\caption{Darstellung 2}
+\caption{Darstellung 2.}
 \label{fig:Abb2b}
 \end{subfigure}
-\caption{Schematische Darstellung bei einseiter Einspannung,Abbildung \subref{fig:Abb2b}: Schematische Darstellung des Drehmoments $M_\text{$\sigma$}$ [10.]}
+\caption{Schematische Darstellung bei einseiter Einspannung,Abbildung \subref{fig:Abb2b}: Schematische Darstellung des Drehmoments $M_\text{$\sigma$}$ [1].}
 \label{fig:Abb2}
 \end{figure}
 
